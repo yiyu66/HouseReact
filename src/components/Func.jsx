@@ -3,7 +3,7 @@ import React from 'react'
 export default function Func() {
     return (
         <div>
-            123
+            <button>点我</button>
         </div>
     )
 }

@@ -1,14 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-import TestLogin from "./components/TestLogin.jsx";
+import "./App.css";
 import Home from "./pages/Home";
-function App () {
+// import logo from './logo.svg';
+function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      项目根组件
+      <Home></Home>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <TestLogin />
-        <Home></Home>
+        
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,7 +17,7 @@ function App () {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
