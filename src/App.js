@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 // import Home from "./pages/Home"
 // import { render } from "react-dom";
 import { Outlet, Link } from "react-router-dom";
