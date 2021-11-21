@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App from "../App";
-
+// import App from "../App";
+// import Expenses from "../pages/CityList/expenses";
+// import Invoices from "../pages/CityList/invoices";
+// import Invoice from "../pages/CityList/invoice";
 import Home from "../pages/Home";
-import Expenses from "../pages/CityList/expenses";
-import Invoices from "../pages/CityList/invoices";
-import Invoice from "../pages/CityList/invoice";
 import NotFound from "../pages/NotFound";
 
 export default function AppRouter() {
@@ -35,7 +34,7 @@ export default function AppRouter() {
             }
           /> */}
         </Route>
-        <Route path="*" element={NotFound}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </BrowserRouter>
   );

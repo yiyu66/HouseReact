@@ -1,7 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
+import HomeHeader from "./HomeHeader";
 
-export default class Home extends Component {
-  render() {
-    return <div>首页</div>;
-  }
+export default function index() {
+  return (
+    <div>
+      <HomeHeader />
+    </div>
+  );
 }
