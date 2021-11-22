@@ -1,3 +1,24 @@
+# 环境配置
+## 路由react-router
+根据react-router官方github的文档来，更新速度较快，网上的教程很多都过时不可用。除非版本降级，项目使用的版本是"react-router-dom": "^6.0.2",路由配置文件放在router文件夹下
+## 安装less
+1. npm install less-loader less --save
+2. 将配置文件暴露出来 npm run eject
+3. 找到webpack.config.js，修改配置新增less相关内容，这里建议直接找网上的教程
+4. 直接安装发现版本太高出现报错TypeError: this.getOptions is not a function，原因参考这篇文章https://segmentfault.com/a/1190000039190699，快速的解决方法：降级  npm install less-loader@7.3.0 --save-dev
+
+## 引入antd
+组件地址
+https://ant.design/components/overview-cn/
+# 页面内容
+## Home界面
+项目首页，包含：
+1. 导航栏：城市选择 搜索框
+2. 轮播图
+3. 待添加.....
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
