@@ -14,13 +14,13 @@ export default function index() {
           <span>上海</span>
         </Link>
       </div>
-
-      <Search
-        placeholder="请输入搜索内容"
-        onSearch={onSearch}
-        style={{ width: 300 }}
-        enterButton
-      />
+      <div className="home-header-middle">
+        <Search
+          placeholder="请输入搜索内容"
+          onSearch={onSearch}
+          enterButton
+        />
+      </div>
     </div>
   );
 }
