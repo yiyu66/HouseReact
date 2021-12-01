@@ -11,15 +11,11 @@ export default function index() {
     <div id="home-header" className="clear-fix">
       <div className="home-header-left">
         <Link to="/city">
-          <span>上海</span>
+          <span style={{ color: "#fff" }}>上海</span>
         </Link>
       </div>
       <div className="home-header-middle">
-        <Search
-          placeholder="请输入搜索内容"
-          onSearch={onSearch}
-          enterButton
-        />
+        <Search placeholder="请输入搜索内容" onSearch={onSearch} enterButton />
       </div>
     </div>
   );
