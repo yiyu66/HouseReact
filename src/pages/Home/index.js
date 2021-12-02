@@ -12,6 +12,7 @@ export default function index() {
     <div>
       <HomeHeader />
       <Swiper banners={ [banner1,banner2,banner3] }/>
+      
     </div>
   );
 }
