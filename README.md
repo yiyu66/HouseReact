@@ -17,8 +17,15 @@ https://ant.design/components/overview-cn/
 2. 轮播图
 3. 待添加.....
 
+# 数据mock
+使用node express框架，模拟后端接口，返回数据，端口设置为3001
+housereact\mock地址下
+`node index.js`
+api地址示例：http://localhost:3001/api/homehot1
 
-
+# 工具
+## api
+配置HTTP请求
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
