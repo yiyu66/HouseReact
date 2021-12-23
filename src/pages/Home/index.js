@@ -1,7 +1,7 @@
 import React from "react";
 import HomeHeader from "./HomeHeader";
 import Swiper from "../../components/Swiper"
-import { HomeHot } from "./HomeHot";
+import HomeHot from "./HomeHot";
 // 引入图片
 import banner1 from "../../static/images/banner1.png"
 import banner2 from "../../static/images/banner2.png"
