@@ -10,6 +10,14 @@ var homehot = require("./data/home/hotdata")
 // var orderComment = require("./data/order")
 
 router.get(config.homehot1, function (req, res) {
+    //设置允许跨域的域名，*代表允许任意域名跨域
+    res.header("Access-Control-Allow-Origin", req.headers.origin || '*');
+    // //允许的header类型
+    res.header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With");
+    // //跨域允许的请求方式 
+    res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+    // 可以带cookies
+    res.header("Access-Control-Allow-Credentials", true);
     // 接受城市作为参数
     var cityName = url.parse(req.url, true).query.city;
     console.log("城市：" + cityName);
