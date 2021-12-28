@@ -7,7 +7,6 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-
 app.use("/api",router);
 
 app.listen(3001,function(){

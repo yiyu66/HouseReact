@@ -3,6 +3,7 @@ var router = express.Router();
 var config = require("./config.js");
 var url = require("url");
 var homehot = require("./data/home/hotdata")
+const houseData = require('./data/houseData.json')
 // var url = require("url");
 // var searchData = require("./data/search")
 // var detailsData = require("./data/details")
@@ -24,11 +25,12 @@ router.get(config.homehot1, function (req, res) {
     res.send(homehot.hot1)
 })
 
-router.get(config.homehot2, function (req, res) {
-    // 接受城市作为参数
-    var cityName = url.parse(req.url, true).query.city;
-    console.log("城市：" + cityName);
-    res.send(homehot.hot2)
+router.get(config.houseData, function (req, res) {
+    res.header("Access-Control-Allow-Origin", req.headers.origin || '*');
+    res.header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Requested-With");
+    res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+    res.header("Access-Control-Allow-Credentials", true);
+    res.send(houseData.slice(0,5))
 })
 
 // // 搜索接口
