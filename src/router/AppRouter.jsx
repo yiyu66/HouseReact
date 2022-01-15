@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Invoice from "../pages/CityList/invoice";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
-import HouseMap from "../pages/HouseMap";
+import HouseMap from "../pages/HouseMap/MapContainer";
 export default function AppRouter() {
   return (
     <BrowserRouter>
